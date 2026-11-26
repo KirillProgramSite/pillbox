@@ -1,75 +1,36 @@
-# React + TypeScript + Vite
+# 💊 Pillio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Твоя аптечка — всегда под контролем.**
 
-Currently, two official plugins are available:
+Pillio — цифровой органайзер домашней аптечки, который помогает управлять лекарствами, контролировать сроки годности, отслеживать запасы и организовывать расписание приёма препаратов.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## ✨ Возможности
 
-## React Compiler
+- 💊 **Аптечка** — хранение и управление лекарствами.
+- 📦 **Контроль запасов** — автоматический расчёт остатков.
+- ⏰ **Расписание** — учёт приёма и пропущенных доз.
+- 📋 **Назначения** — хранение курсов лечения и документов врача.
+- 📅 **Сроки годности** — автоматические предупреждения.
+- 🧳 **Поездки** — подготовка списка лекарств для путешествий.
+- 📊 **Статистика** — история приёма и расхода препаратов.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠 Технологии
 
-## Expanding the ESLint configuration
+React · TypeScript · Vite · Zustand · Dexie.js · React Router · React Hook Form · Zod · Tailwind CSS · Recharts
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🚀 Запуск проекта
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+```bash
+git clone <repository-url>
+cd pillio
+npm install
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+## 📌 Статус
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+🚧 Проект находится в разработке.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+---
 
-```
+**Pillio — Keep your medicine organized.** 💚
